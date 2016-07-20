@@ -21,6 +21,10 @@
 #include <pthread.h> 
 #include "winglue.h"
 
+#ifdef __MINGW32__
+#include "glpi.h"
+#endif
+
 int
 count_processors(void)
 {
